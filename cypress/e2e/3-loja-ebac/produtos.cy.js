@@ -3,11 +3,11 @@
 describe('Funcionalidade: Produtos', () => {
         
         beforeEach(() => {
-            cy.visit('http://lojaebac.ebaconline.art.br/produtos/')
+            cy.visit('produtos')
         });
 
         it('Deve selecionar um produto da lista', () => {
-            cy.get('.product-block')
+            cy.get('.products > .row')
          //   .last()
         // .eq(2)
         .contains('Apollo Running Short')
